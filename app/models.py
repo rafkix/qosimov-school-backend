@@ -15,7 +15,7 @@ class Teacher(models.Model):
     name = models.CharField(max_length=100)
     subject = models.CharField(max_length=100)
     bio = models.TextField(blank=True)
-    image = models.ImageField(upload_to="teachers/")
+    image = models.ImageField(upload_to="teachers/%Y/%m/%d/")
     video_url = models.URLField(blank=True, null=True)
     experience_years = models.PositiveIntegerField(default=0)
 
@@ -58,7 +58,7 @@ class Certificate(models.Model):
         blank=True,
         related_name="certificates"
     )
-    certificate_file = models.FileField(upload_to="certificates/")
+    certificate_file = models.FileField(upload_to="certificates/%Y/%m/%d/")
     issued_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -67,7 +67,7 @@ class Certificate(models.Model):
 class Activity(models.Model):
     title = models.CharField(max_length=150)
     description = models.TextField()
-    image = models.ImageField(upload_to="activities/")
+    image = models.ImageField(upload_to="activities/%Y/%m/%d/")
     date = models.DateField(null=True, blank=True)
 
     def __str__(self):
