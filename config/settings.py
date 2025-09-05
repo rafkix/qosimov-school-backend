@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-f84_i1nv6-eeo5hay@oi#%^xr5r%1-0d1$e$q5cd(q@i9ntky3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.53.174.146', 'qosimovschool.uz', '*']  # EC2 public IP
+ALLOWED_HOSTS = ['qosimov-school-backend.onrender.com']
 
 
 # Application definition
