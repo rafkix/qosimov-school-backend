@@ -117,9 +117,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-# Static files (CSS, JS, images)
+# Django statik fayllar URL
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # deploy uchun
+
+# Collectstatic orqali chiqariladigan papka
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Media files (uploaded by users)
 MEDIA_URL = '/media/'
