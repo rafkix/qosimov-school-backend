@@ -1,4 +1,6 @@
 # config/urls.py
+from django.contrib import admin
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -12,5 +14,5 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 else:
-    # Production: agar media fayllar /media URL orqali xizmat qilinishi kerak bo‘lsa
-    urlpatterns += static('/media/', document_root=settings.MEDIA_ROOT)
+    # Production: Render kabi serverlar uchun media fayllarni /media URL orqali xizmat qilish
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
