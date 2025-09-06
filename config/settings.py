@@ -4,7 +4,8 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-f84_i1nv6-eeo5hay@oi#%^xr5r%1-0d1$e$q5cd(q@i9ntky3'
-DEBUG = False  # Production uchun False
+DEBUG = True
+
 
 ALLOWED_HOSTS = [
     'qosimov-school-backend.onrender.com',
