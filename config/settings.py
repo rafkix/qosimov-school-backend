@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 SECRET_KEY = 'django-insecure-f84_i1nv6-eeo5hay@oi#%^xr5r%1-0d1$e$q5cd(q@i9ntky3'
 DEBUG = False  # Production uchun False
-ALLOWED_HOSTS = ['qosimov-school-backend.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['qosimov-school-backend.onrender.com', 'localhost', '127.0.0.1', 'qosimovschool.uz']
 
 # Application definition
 INSTALLED_APPS = [
